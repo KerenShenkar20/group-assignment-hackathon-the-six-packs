@@ -16,6 +16,7 @@ const addData = () => {
         challenge: $("#challenge_pass_input").val(),
         Country: $("#country_pass_input").val(),
     }
+    console.log(dataBody);
     axios({
             method: 'POST',
             url: myUrl,
