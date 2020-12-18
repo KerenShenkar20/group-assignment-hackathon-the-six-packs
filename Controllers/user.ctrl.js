@@ -1,6 +1,5 @@
 // Change the name of the file if needed
-const express = require('express');
-const { userModel } = require("../models/user");
+const { userModel } = require("../Models/user");
 const { validUser } = require("../validation/users");
 
 
