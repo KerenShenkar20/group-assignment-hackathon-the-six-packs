@@ -6,7 +6,8 @@ const validUser = (_userObj) => {
         first_name: Joi.string().min(2).max(50).required(),
         last_name: Joi.string().min(2).max(50).required(),
         age: Joi.number().min(1).max(50).required(),
-        aubject: Joi.string().required()
+        aubject: Joi.string().required(),
+        address: Joi.string().min(2).max(50).required()
     })
     return schema.validate(_userObj);
 }
