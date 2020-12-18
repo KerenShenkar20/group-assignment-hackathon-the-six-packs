@@ -19,7 +19,7 @@ const addData = () => {
     })
         .then(myData => {
             alert("success")
-            window.location.href = "layout2.html";
+            window.location.href = "results.html";
         })
         .catch(error => {
             console.log(error.response)
