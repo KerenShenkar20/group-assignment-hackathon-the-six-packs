@@ -5,7 +5,7 @@ window.onload = () => {
 }
 
 const addData = () => {
-    let myUrl = "http://localhost:3000/users/add/";
+    let myUrl = "http://localhost:8080/users";
 
     let dataBody = {
         user: $("#id_user_input").val(),
