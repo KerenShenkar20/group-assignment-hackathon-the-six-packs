@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
+const {userRouter}= require("./Routers/user.router");
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
@@ -11,6 +12,7 @@ app.use((req, res, next) => {
     res.set('Content-Type', 'application/json');
     next();
 });
+app.use('/users',userRouter);
 
 app.use((err, req, res, next) => {
     console.error(err.stack);
