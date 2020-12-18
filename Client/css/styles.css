@@ -3,21 +3,44 @@
     padding: 0;
 }
 
-header,
-main,
-footer,
-nav,
-aside,
-section,
-div {
+header, main, footer, nav, aside, section, div {
     display: block;
 }
 
 body {
-    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    background-image: url("../images/kidsGames.jpg");
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:left center;
+}
+
+#logo{
+    background: url("../images/Logo.png") no-repeat;
+    display: block;
+    margin-left: 16px;
+    background-size: contain;
+    text-decoration: none;
+}
+
+#logo span{
+    margin-left: 80px;
+    margin-top: 20px;
+    font-family: Carter One;
+    font-size: 40px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
 }
 
 #wrapper {
     margin: 10px auto;
     width: 90%;
+}
+
+h1{
+    margin: 0 auto;
+    width: 450px;
 }
