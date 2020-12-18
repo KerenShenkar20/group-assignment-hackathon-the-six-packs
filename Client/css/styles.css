@@ -8,11 +8,9 @@ header, main, footer, nav, aside, section, div {
 }
 
 body {
-    background-image: url("../images/kidsGames.jpg");
+    background-image: url("../images/kidsGames.png");
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-repeat: no-repeat;
     background-attachment:fixed;
-    background-position:left center;
 }
 
 #logo{
@@ -43,4 +41,10 @@ body {
 h1{
     margin: 0 auto;
     width: 450px;
+    text-align: center;
+}
+
+.p-4{
+    margin: 0 auto;
+    background-color: azure;
 }
