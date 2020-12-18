@@ -1,13 +1,13 @@
 const { Router } = require('express');
-const {userController} = require('../Controllers/user.ctrl');
+const {getUsers,userAdd} = require('../Controllers/user.ctrl');
 
 
 const userRouter = new Router();
 
-userRouter.get('/',userController.getUsers); 
+userRouter.get('/',getUsers); 
 // userRouter.get('/filter',userController.filterUsers); 
 // userRouter.get('/:id',userController.getUser);
-userRouter.post('/',userController.addUser); 
+userRouter.post('/',userAdd); 
 // userRouter.put('/:id',userController.updateUser); 
 // userRouter.delete('/:id',userController.deleteUser);
 
