@@ -3,7 +3,13 @@
     padding: 0;
 }
 
-header, main, footer, nav, aside, section, div  {
+header,
+main,
+footer,
+nav,
+aside,
+section,
+div {
     display: block;
 }
 
