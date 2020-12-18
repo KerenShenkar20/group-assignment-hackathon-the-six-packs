@@ -2,7 +2,6 @@ window.onload = () => {
     matchUsers();
 }
 
-
 class User {
     constructor(_parent,_id, _fname, _lname, _match, _i) {
         this.parent = _parent;
@@ -26,7 +25,7 @@ class User {
 }
 
 const matchUsers = () => {
-    let myUrl = "http://localhost:3000/users/";
+    let myUrl = "http://localhost:8080/users/";
     let res = await axios.get(myUrl);
     console.log(res);
     createUser(res);

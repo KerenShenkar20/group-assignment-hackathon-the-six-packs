@@ -1,7 +1,9 @@
-// Change the name of the file to something less generic
-
 window.onload = () => {
-    addData();
+    
+    $("#id_form").on("submit",(evt) => {
+        evt.preventDefault();
+      });
+      addData();
 }
 
 const addData = () => {
