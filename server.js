@@ -5,6 +5,8 @@ const {userRouter}= require("./Routers/user.router");
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.use(express.static('Client'));
+
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
