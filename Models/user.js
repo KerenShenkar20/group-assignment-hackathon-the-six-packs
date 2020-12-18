@@ -1,3 +1,4 @@
+const { boolean, string } = require('joi');
 const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema({
@@ -6,6 +7,7 @@ const userSchema = new Schema({
     age: { type: Number },
     subject: { type: String },
     address: { type: String },
+    match: { type: Boolean, default: false },
 
 }, { collection: 'users' });
 
