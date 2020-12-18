@@ -7,7 +7,7 @@ const userRouter = new Router();
 userRouter.get('/',userController.getUsers); 
 // userRouter.get('/filter',userController.filterUsers); 
 // userRouter.get('/:id',userController.getUser);
-// userRouter.post('/',userAdd); 
+userRouter.post('/', userController.addUser); 
 // userRouter.put('/:id',userController.updateUser); 
 // userRouter.delete('/:id',userController.deleteUser);
 
